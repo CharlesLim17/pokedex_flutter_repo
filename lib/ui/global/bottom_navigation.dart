@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:pokedex_flutter_repo/features/home/screen/home_screen.dart';
 import 'package:pokedex_flutter_repo/ui/global/drawer_widget.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
@@ -14,14 +15,14 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
   int _selectedIndex = 0;
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  static final List<String> _appBarTitles = [
-    'Home',
-    'Pokedex',
-    'Profile',
-  ];
+  // static final List<String> _appBarTitles = [
+  //   'Home',
+  //   'Pokedex',
+  //   'Profile',
+  // ];
 
   static final List<Widget> _widgetOptions = <Widget>[
-    const Icon(LineIcons.home),
+    const HomeScreen(),
     const Icon(LineIcons.book),
     const Icon(LineIcons.user),
   ];
@@ -34,42 +35,28 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
       key: _scaffoldKey,
       backgroundColor: colors.background,
 
-      // App Bar
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        titleSpacing: 0,
+      // // App Bar
+      // appBar: AppBar(
+      //   backgroundColor: const Color(0xFFFF5555),
+      //   titleSpacing: 0,
 
-        // Color
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: [
-                const Color(0xFF191414),
-                const Color(0xFF191414).withOpacity(0.65),
-              ],
-            ),
-          ),
-        ),
+      //   // icon
+      //   leading: IconButton(
+      //     icon: Icon(Icons.menu, color: colors.background),
+      //     onPressed: () {
+      //       _scaffoldKey.currentState?.openDrawer();
+      //     },
+      //   ),
 
-        // icon
-        leading: IconButton(
-          icon: Icon(Icons.menu, color: colors.background),
-          onPressed: () {
-            _scaffoldKey.currentState?.openDrawer();
-          },
-        ),
-
-        // title
-        title: Text(
-          _appBarTitles[_selectedIndex],
-          style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                fontSize: 20,
-                color: colors.background,
-              ),
-        ),
-      ),
+      //   // title
+      //   title: Text(
+      //     _appBarTitles[_selectedIndex],
+      //     style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+      //           fontSize: 20,
+      //           color: colors.background,
+      //         ),
+      //   ),
+      // ),
 
       drawer: const DrawerWidget(),
 
