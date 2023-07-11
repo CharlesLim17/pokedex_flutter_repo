@@ -10,9 +10,6 @@ class ThemeColor {
   // for labels of fields and small texts
   static const Color tertiary = Color(0xFF747683);
 
-  // for field color
-  static const Color netural = Color(0xFFE1E8ED);
-
   // background color
   static const Color background = Color(0xFF202020);
 

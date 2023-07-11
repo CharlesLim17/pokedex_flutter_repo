@@ -12,7 +12,7 @@ class HomeScreen extends ConsumerWidget {
     // ColorScheme colors = Theme.of(context).colorScheme;
 
     return Container(
-      color: const Color(0xFF202020),
+      color: const Color(0xFF1A1A1A),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
