@@ -11,6 +11,7 @@ class HistoryCardsWidget extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        // Match 1
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Container(
@@ -58,7 +59,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFF2CBCB4),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_brock.png',
                         height: 80,
@@ -110,7 +111,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFFF38376),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_gary.webp',
                         height: 80,
@@ -123,7 +124,11 @@ class HistoryCardsWidget extends ConsumerWidget {
             ),
           ),
         ),
+
+        //
         const SizedBox(height: 16),
+
+        // Match 2
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Container(
@@ -171,7 +176,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFFF38376),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_gary.webp',
                         height: 80,
@@ -223,7 +228,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFF5CBAE7),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_misty.webp',
                         height: 80,
@@ -236,7 +241,11 @@ class HistoryCardsWidget extends ConsumerWidget {
             ),
           ),
         ),
+
+        //
         const SizedBox(height: 16),
+
+        // Match 3
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Container(
@@ -284,7 +293,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFF5CBAE7),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_misty.webp',
                         height: 80,
@@ -336,7 +345,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFF2CBCB4),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_brock.png',
                         height: 80,
@@ -349,7 +358,11 @@ class HistoryCardsWidget extends ConsumerWidget {
             ),
           ),
         ),
+
+        //
         const SizedBox(height: 16),
+
+        // Match 4
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Container(
@@ -397,7 +410,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFF2CBCB4),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_brock.png',
                         height: 80,
@@ -449,7 +462,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFFF38376),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_gary.webp',
                         height: 80,
@@ -462,7 +475,11 @@ class HistoryCardsWidget extends ConsumerWidget {
             ),
           ),
         ),
+
+        //
         const SizedBox(height: 16),
+
+        // Match 5
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Container(
@@ -510,7 +527,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFFF38376),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_gary.webp',
                         height: 80,
@@ -562,7 +579,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFF5CBAE7),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_misty.webp',
                         height: 80,
@@ -575,7 +592,11 @@ class HistoryCardsWidget extends ConsumerWidget {
             ),
           ),
         ),
+
+        //
         const SizedBox(height: 16),
+
+        // Match 6
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Container(
@@ -623,7 +644,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFF5CBAE7),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_misty.webp',
                         height: 80,
@@ -675,7 +696,7 @@ class HistoryCardsWidget extends ConsumerWidget {
                         color: const Color(0xFF2CBCB4),
                       ),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 32.0, vertical: 16.0),
+                          horizontal: 24.0, vertical: 8.0),
                       child: Image.asset(
                         'assets/images/trainer_brock.png',
                         height: 80,
