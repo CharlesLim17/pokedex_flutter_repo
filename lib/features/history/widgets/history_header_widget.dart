@@ -3,15 +3,14 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pokedex_flutter_repo/ui/spacer/pokedex_spacer.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
-class HomeHeaderWidget extends ConsumerWidget {
-  const HomeHeaderWidget({
+class HistoryHeaderWidget extends ConsumerWidget {
+  const HistoryHeaderWidget({
     super.key,
   });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     Size screenSize = MediaQuery.of(context).size;
-    ColorScheme colors = Theme.of(context).colorScheme;
 
     return Stack(
       children: [
@@ -43,7 +42,7 @@ class HomeHeaderWidget extends ConsumerWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     GradientText(
-                      "Welcome \nBack Trainer!",
+                      "Embark On \nYour Journey!",
                       style:
                           Theme.of(context).textTheme.headlineMedium!.copyWith(
                                 fontSize: 40,
@@ -53,13 +52,14 @@ class HomeHeaderWidget extends ConsumerWidget {
                         Color(0xFF5CBAE7),
                         Color(0xFF9C5CBC),
                       ],
+                      // gradientDirection: GradientDirection.ttb,
                     ),
 
                     // Complimentary text
                     Text(
-                      "What Pokémon are you looking for?",
+                      "Here are your battle history!",
                       style: Theme.of(context).textTheme.labelLarge!.copyWith(
-                            color: colors.background,
+                            color: Colors.white,
                             fontSize: 16,
                           ),
                     ),
@@ -80,7 +80,7 @@ class HomeHeaderWidget extends ConsumerWidget {
                       ),
                   decoration: InputDecoration(
                     // hint
-                    hintText: 'Search Pokémon.',
+                    hintText: 'Search Battle History.',
                     hintStyle: Theme.of(context).textTheme.labelLarge?.copyWith(
                           color: Colors.grey,
                         ),

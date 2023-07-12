@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:pokedex_flutter_repo/features/history/screen/history_screen.dart';
 import 'package:pokedex_flutter_repo/features/home/screen/home_screen.dart';
 import 'package:pokedex_flutter_repo/features/profile/screen/profile_screen.dart';
-import 'package:pokedex_flutter_repo/ui/global/drawer_widget.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
   const BottomNavigationBarWidget({super.key});
@@ -19,48 +20,22 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
   // static final List<String> _appBarTitles = [
   //   'Home',
   //   'Pokedex',
-  //   'Profile',
+  //   'Battle History',
+  //   'Trainer Card',
   // ];
 
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreen(),
     const Icon(LineIcons.book),
-    const Icon(LineIcons.history),
+    const HistoryScreen(),
     const ProfileScreen(),
   ];
 
   @override
   Widget build(BuildContext context) {
-    ColorScheme colors = Theme.of(context).colorScheme;
-
     return Scaffold(
       key: _scaffoldKey,
-      backgroundColor: colors.background,
-
-      // // App Bar
-      // appBar: AppBar(
-      //   backgroundColor: const Color(0xFFFF5555),
-      //   titleSpacing: 0,
-
-      //   // icon
-      //   leading: IconButton(
-      //     icon: Icon(Icons.menu, color: colors.background),
-      //     onPressed: () {
-      //       _scaffoldKey.currentState?.openDrawer();
-      //     },
-      //   ),
-
-      //   // title
-      //   title: Text(
-      //     _appBarTitles[_selectedIndex],
-      //     style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-      //           fontSize: 20,
-      //           color: colors.background,
-      //         ),
-      //   ),
-      // ),
-
-      drawer: const DrawerWidget(),
+      backgroundColor: const Color(0xFF1C1C1C),
 
       // Body
       body: Container(
@@ -88,8 +63,8 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
-                horizontal: 16.0,
-                vertical: 11,
+                horizontal: 12.0,
+                vertical: 8.0,
               ),
               child: GNav(
                 // sizings
@@ -97,14 +72,12 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
                   horizontal: 10,
                   vertical: 6,
                 ),
-                gap: 6,
-                iconSize: 20,
 
                 // colors
                 backgroundColor: const Color(0xFF1C1C1C),
                 color: Colors.grey,
                 activeColor: Colors.white70,
-                tabBackgroundColor: Colors.grey.withOpacity(0.18),
+                tabBackgroundColor: const Color(0xFF262626),
                 tabActiveBorder:
                     Border.all(color: Colors.grey.shade900, width: 1),
 
@@ -116,25 +89,33 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
                 // animations
                 curve: Curves.linear,
                 rippleColor: Colors.grey.shade900,
-                hoverColor: const Color(0xFF2B74C7).withOpacity(.25),
+                hoverColor: const Color(0xFF262626),
 
                 // tabs
                 tabs: const [
                   GButton(
-                    icon: LineIcons.home,
+                    icon: FontAwesomeIcons.houseChimney,
                     text: 'Home',
+                    iconSize: 18,
+                    gap: 8,
                   ),
                   GButton(
-                    icon: LineIcons.bookOpen,
+                    icon: FontAwesomeIcons.circleDot,
                     text: 'Pokédex',
+                    iconSize: 22,
+                    gap: 6,
                   ),
                   GButton(
-                    icon: LineIcons.superpowers,
-                    text: 'History',
+                    icon: FontAwesomeIcons.battleNet,
+                    text: 'Battles',
+                    iconSize: 22,
+                    gap: 6,
                   ),
                   GButton(
-                    icon: LineIcons.user,
+                    icon: FontAwesomeIcons.userAstronaut,
                     text: 'Trainer Card',
+                    iconSize: 20,
+                    gap: 6,
                   ),
                 ],
                 selectedIndex: _selectedIndex,
