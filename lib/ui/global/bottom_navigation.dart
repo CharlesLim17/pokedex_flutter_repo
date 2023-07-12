@@ -25,6 +25,7 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreen(),
     const Icon(LineIcons.book),
+    const Icon(LineIcons.history),
     const ProfileScreen(),
   ];
 
@@ -125,11 +126,15 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
                   ),
                   GButton(
                     icon: LineIcons.bookOpen,
-                    text: 'Pokedex',
+                    text: 'Pokédex',
+                  ),
+                  GButton(
+                    icon: LineIcons.superpowers,
+                    text: 'History',
                   ),
                   GButton(
                     icon: LineIcons.user,
-                    text: 'Profile',
+                    text: 'Trainer Card',
                   ),
                 ],
                 selectedIndex: _selectedIndex,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:pokedex_flutter_repo/features/profile/widgets/profile_badges_widget.dart';
 import 'package:pokedex_flutter_repo/features/profile/widgets/profile_cards_widget.dart';
+import 'package:pokedex_flutter_repo/features/profile/widgets/profile_friends_widget.dart';
 import 'package:pokedex_flutter_repo/features/profile/widgets/profile_header_widget.dart';
 import 'package:pokedex_flutter_repo/ui/spacer/pokedex_spacer.dart';
 
@@ -20,12 +22,25 @@ class ProfileScreen extends ConsumerWidget {
           const ProfileHeaderWidget(),
 
           //
+          PokedexSpacer(height: screenSize.height * 0.03),
+
+          // Friends
+          const ProfileFriendsWidget(),
+
+          //
           PokedexSpacer(height: screenSize.height * 0.02),
 
           // Cards
           const ProfileCardsWidget(),
 
           //
+          PokedexSpacer(height: screenSize.height * 0.02),
+
+          // Badges
+          const ProfileBadgesWidget(),
+
+          //
+          PokedexSpacer(height: screenSize.height * 0.02),
         ],
       ),
     );
