@@ -82,7 +82,7 @@ class AppTheme {
         ),
 
         headlineLarge: TextStyle(
-          fontFamily: 'Montserrat-Bold',
+          fontFamily: 'Pokemon-Solid',
         ),
 
         // Titles

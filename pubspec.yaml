@@ -56,6 +56,9 @@ dependencies:
 
   # Bottom nav
   google_nav_bar: ^5.0.6
+
+  # Google Fonts
+  google_fonts: ^2.1.0
   
 
 dev_dependencies:
@@ -106,6 +109,9 @@ flutter:
     - family: Montserrat-Bold
       fonts:
         - asset: assets/fonts/Montserrat-Bold.ttf
+    - family: Pokemon-Solid
+      fonts:
+        - asset: assets/fonts/Pokemon-Solid.ttf
 
   #
   # For details regarding fonts from package dependencies,

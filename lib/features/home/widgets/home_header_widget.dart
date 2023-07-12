@@ -45,7 +45,7 @@ class HomeHeaderWidget extends ConsumerWidget {
                     GradientText(
                       "Welcome \nBack Trainer!",
                       style:
-                          Theme.of(context).textTheme.headlineLarge!.copyWith(
+                          Theme.of(context).textTheme.headlineMedium!.copyWith(
                                 fontSize: 40,
                               ),
                       colors: const [Color(0xFF0CFF60), Color(0xFF0091FB)],
