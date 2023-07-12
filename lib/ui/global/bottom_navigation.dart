@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:pokedex_flutter_repo/features/home/screen/home_screen.dart';
+import 'package:pokedex_flutter_repo/features/profile/screen/profile_screen.dart';
 import 'package:pokedex_flutter_repo/ui/global/drawer_widget.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
@@ -24,7 +25,7 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreen(),
     const Icon(LineIcons.book),
-    const Icon(LineIcons.user),
+    const ProfileScreen(),
   ];
 
   @override
