@@ -3,8 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pokedex_flutter_repo/ui/spacer/pokedex_spacer.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
-class HomeHeader extends ConsumerWidget {
-  const HomeHeader({
+class HomeHeaderWidget extends ConsumerWidget {
+  const HomeHeaderWidget({
     super.key,
   });
 

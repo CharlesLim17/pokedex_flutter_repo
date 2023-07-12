@@ -67,7 +67,7 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
 
       // Bottom Navigation
       bottomNavigationBar: Container(
-        color: const Color(0xFFF5F8FA),
+        color: const Color(0xFF1C1C1C),
         child: Stack(
           children: [
             Positioned(
@@ -76,7 +76,7 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
               right: 0,
               child: Container(
                 height: 1,
-                color: Colors.grey.shade300,
+                color: Colors.grey.shade900,
               ),
             ),
             Padding(
@@ -91,25 +91,24 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
                   vertical: 6,
                 ),
                 gap: 6,
-                iconSize: 22,
+                iconSize: 20,
 
                 // colors
-                backgroundColor: const Color(0xFFF5F8FA),
-                color: const Color(0xFF2B74C7),
-                activeColor: const Color(0xFF2B74C7),
-                tabBackgroundColor: const Color(0xFF2B74C7).withOpacity(0.18),
+                backgroundColor: const Color(0xFF1C1C1C),
+                color: Colors.grey,
+                activeColor: Colors.white70,
+                tabBackgroundColor: Colors.grey.withOpacity(0.18),
                 tabActiveBorder:
-                    Border.all(color: Colors.grey.shade300, width: 1),
+                    Border.all(color: Colors.grey.shade900, width: 1),
 
                 // styles
                 textStyle: Theme.of(context).textTheme.labelLarge!.copyWith(
-                      color: const Color(0xFF2B74C7),
-                      fontWeight: FontWeight.normal,
+                      color: Colors.white70,
                     ),
 
                 // animations
                 curve: Curves.linear,
-                rippleColor: Colors.grey.shade300,
+                rippleColor: Colors.grey.shade900,
                 hoverColor: const Color(0xFF2B74C7).withOpacity(.25),
 
                 // tabs

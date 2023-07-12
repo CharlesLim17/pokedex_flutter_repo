@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:pokedex_flutter_repo/features/home/widgets/home_cards_widget.dart';
 import 'package:pokedex_flutter_repo/features/home/widgets/home_header_widget.dart';
 import 'package:pokedex_flutter_repo/ui/spacer/pokedex_spacer.dart';
 
@@ -12,15 +13,20 @@ class HomeScreen extends ConsumerWidget {
     // ColorScheme colors = Theme.of(context).colorScheme;
 
     return Container(
-      color: const Color(0xFF1A1A1A),
+      color: const Color(0xFF1C1C1C),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // header
-          const HomeHeader(),
+          const HomeHeaderWidget(),
 
           //
           PokedexSpacer(height: screenSize.height * 0.022),
+
+          // Cards
+          const HomeCardsWidget(),
+
+          //
         ],
       ),
     );
