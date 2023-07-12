@@ -63,7 +63,12 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
 
       // Body
       body: Container(
-        child: _widgetOptions.elementAt(_selectedIndex),
+        height: double.infinity,
+        width: double.infinity,
+        color: const Color(0xFF1C1C1C),
+        child: SingleChildScrollView(
+          child: _widgetOptions.elementAt(_selectedIndex),
+        ),
       ),
 
       // Bottom Navigation

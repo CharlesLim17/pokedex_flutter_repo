@@ -30,7 +30,7 @@ class HomeCardsWidget extends ConsumerWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Pokedex',
+                        'Pokédex',
                         style: Theme.of(context).textTheme.labelLarge?.copyWith(
                             fontWeight: FontWeight.bold, color: Colors.white),
                         textAlign: TextAlign.center,
@@ -204,7 +204,7 @@ class HomeCardsWidget extends ConsumerWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'Type',
+                        'Type Charts',
                         style: Theme.of(context).textTheme.labelLarge?.copyWith(
                             fontWeight: FontWeight.bold, color: Colors.white),
                         textAlign: TextAlign.center,

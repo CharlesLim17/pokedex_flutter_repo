@@ -53,7 +53,7 @@ class HomeHeaderWidget extends ConsumerWidget {
 
                     // Complimentary text
                     Text(
-                      "What Pokemon are you looking for?",
+                      "What Pokémon are you looking for?",
                       style: Theme.of(context).textTheme.labelLarge!.copyWith(
                             color: colors.background,
                             fontSize: 16,
@@ -76,7 +76,7 @@ class HomeHeaderWidget extends ConsumerWidget {
                       ),
                   decoration: InputDecoration(
                     // hint
-                    hintText: 'Search Pokemon.',
+                    hintText: 'Search Pokémon.',
                     hintStyle: Theme.of(context).textTheme.labelLarge?.copyWith(
                           color: Colors.grey,
                         ),
