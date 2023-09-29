@@ -59,6 +59,9 @@ dependencies:
 
   # Google Fonts
   google_fonts: ^2.1.0
+
+  # dio
+  dio: ^5.3.3
   
 
 dev_dependencies:

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:line_icons/line_icons.dart';
 import 'package:pokedex_flutter_repo/features/history/screen/history_screen.dart';
 import 'package:pokedex_flutter_repo/features/home/screen/home_screen.dart';
+import 'package:pokedex_flutter_repo/features/pokedex/screen/pokedex_screen.dart';
 import 'package:pokedex_flutter_repo/features/profile/screen/profile_screen.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
@@ -17,16 +17,9 @@ class BottomNavBarState extends State<BottomNavigationBarWidget> {
   int _selectedIndex = 0;
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  // static final List<String> _appBarTitles = [
-  //   'Home',
-  //   'Pokedex',
-  //   'Battle History',
-  //   'Trainer Card',
-  // ];
-
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreen(),
-    const Icon(LineIcons.book),
+    const PokedexScreen(),
     const HistoryScreen(),
     const ProfileScreen(),
   ];
